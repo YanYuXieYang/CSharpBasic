@@ -104,6 +104,9 @@ namespace CSharpBasic
 
             new Indexer();
 
+            new Try_catch();
+            new Try_catch2();
+
             new Extend1();
             new Extend2();
             new Extend3();
@@ -115,9 +118,6 @@ namespace CSharpBasic
             string sa = "";
             int i = sa.Length;
             byte[] bv = new byte['1'];
-
-            new Try_catch();
-            new Try_catch2();
 
             new Equals();
 

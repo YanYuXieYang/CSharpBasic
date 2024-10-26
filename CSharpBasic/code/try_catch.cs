@@ -29,7 +29,7 @@ namespace CSharpBasic.code
                 {
                     return ff();
                 }
-                catch (Exception e)
+                catch (Exception e)// 类型必填，不填报错
                 {
                     Console.WriteLine("e");
                 }
@@ -39,6 +39,9 @@ namespace CSharpBasic.code
                 }
                 return "hh end";
             }
+        
         }
+
+
     }
 }
