@@ -74,20 +74,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="code\equals.cs" />
+    <Compile Include="AClass.cs" />
+    <Compile Include="code\ConstructorFunc.cs" />
+    <Compile Include="code\Delegate.cs" />
+    <Compile Include="code\Equals.cs" />
     <Compile Include="code\Extend1.cs" />
     <Compile Include="code\Extend2.cs" />
     <Compile Include="code\Extend3.cs" />
     <Compile Include="code\MemberwiseClone.cs" />
     <Compile Include="code\Modifier.cs" />
+    <Compile Include="code\New.cs" />
     <Compile Include="code\Static.cs" />
     <Compile Include="code\Switch.cs" />
-    <Compile Include="code\try_catch.cs" />
-    <Compile Include="code\try_catch2.cs" />
+    <Compile Include="code\Try_catch.cs" />
+    <Compile Include="code\Try_catch2.cs" />
     <Compile Include="code\Virtual.cs" />
+    <Compile Include="PartialClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="code\boxing_unboxing.cs" />
+    <Compile Include="code\Boxing_unboxing.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

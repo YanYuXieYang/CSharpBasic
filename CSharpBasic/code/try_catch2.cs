@@ -10,9 +10,9 @@ namespace CSharpBasic.code
     /// return语句会先压入栈里面，最后执行finally语句（有return语句，值压入栈中），最后弹出栈顶元素。
     /// finally会执行，在方法返回调用前执行。准确的说是在return中间执行。
     /// </summary>
-    public class try_catch2
+    public class Try_catch2
     {
-        public try_catch2()
+        public Try_catch2()
         {
             //Console.WriteLine("结果： {0}" , new Test().test());
             //Console.WriteLine("结果： " + new Test().test2());

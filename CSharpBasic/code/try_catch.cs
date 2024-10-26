@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CSharpBasic.code
 {
-    public class try_catch
+    public class Try_catch
     {
-        public try_catch()
+        public Try_catch()
         {
             TryAndFinally taf = new TryAndFinally();
             string ret=taf.hh();

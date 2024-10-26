@@ -85,6 +85,19 @@ namespace CSharpBasic
 
             new Virtual();
 
+            new NewFunc();
+            new NewFunc2();
+
+            new ConstructorFunc();
+            new ConstructorFunc2();
+
+            string getChar = "12345";
+            char c1 = getChar[1];
+            Console.WriteLine(c1);
+
+            var partialClass = new EClass();
+            partialClass.Show($"E1={partialClass.E1},E2={partialClass.E2}");
+
             new Extend1();
             new Extend2();
             new Extend3();
@@ -97,8 +110,8 @@ namespace CSharpBasic
             int i = sa.Length;
             byte[] bv = new byte['1'];
 
-            new try_catch();
-            new try_catch2();
+            new Try_catch();
+            new Try_catch2();
 
             new Equals();
 

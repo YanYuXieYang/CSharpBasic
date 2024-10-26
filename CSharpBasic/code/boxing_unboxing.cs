@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace CSharpBasic.code
 {
-    public class boxing_unboxing
+    public class Boxing_unboxing
     {
         public static void Boxing()
         {
