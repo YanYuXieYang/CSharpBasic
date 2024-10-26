@@ -9,7 +9,7 @@ namespace CSharpBasic.code
     /// <summary>
     /// 虚方法，参考：https://www.cnblogs.com/djd66/p/18085346
     /// </summary>
-    private class Virtual
+    class Virtual
     {
         public Virtual()
         {
