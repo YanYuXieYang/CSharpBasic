@@ -98,6 +98,12 @@ namespace CSharpBasic
             var partialClass = new EClass();
             partialClass.Show($"E1={partialClass.E1},E2={partialClass.E2}");
 
+            var r = new AClass();
+            r.Name = "abcde";
+            Console.WriteLine(r);//输出结果是命名空间+类型：CSharpBasic.code.AClass。若是record记录则会输出类似GRecord { A = abcde, B = 0 }
+
+            new Indexer();
+
             new Extend1();
             new Extend2();
             new Extend3();

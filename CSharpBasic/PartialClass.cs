@@ -13,6 +13,7 @@ namespace CSharpBasic.code
     /// 分开的好处是如果同一个类被两个人定义，互不打扰，或者同一个类中成员分两类功能，
     /// 可以分开定义，看起来比较集中，比如 WinForm 程序，自动生成的成员会在一个文件中定义，
     /// 自己写的成员会在一个文件中，可以让开发人员更专注自己写的功能。
+    /// 每个部分必须使用partial关键字，并且所有部分必须在同一个命名空间中。
     /// b.cs如下,a.cs在另一个文件AClass.cs中
     /// </summary>
     public partial class EClass
