@@ -27,17 +27,22 @@ namespace CSharpBasic.code
             {
                 try
                 {
-                    return ff();
+                    ff();
+                    var i = 0;
+                    var k = 100 / i;
+
+                    //return ff();
                 }
                 catch (Exception e)// 类型必填，不填报错
                 {
                     Console.WriteLine("e");
+                    return "catch end";
                 }
                 finally
                 {
                     Console.WriteLine("finally");
                 }
-                return "hh end";
+                return "hh end";// 调用了try或catch里的return之后，此return不会再调用
             }
         
         }

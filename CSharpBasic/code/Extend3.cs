@@ -11,6 +11,8 @@ namespace CSharpBasic.code
         public Extend3()
         {
             SubClass obj = new SubClass();
+            obj = null;
+            System.GC.Collect();
             // 程序结束时，obj对象将被垃圾回收，并调用析构函数
         }
 

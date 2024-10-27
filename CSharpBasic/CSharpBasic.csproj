@@ -84,10 +84,12 @@
     <Compile Include="code\MemberwiseClone.cs" />
     <Compile Include="code\Modifier.cs" />
     <Compile Include="code\New.cs" />
+    <Compile Include="code\Out.cs" />
     <Compile Include="code\Static.cs" />
     <Compile Include="code\Switch.cs" />
     <Compile Include="code\Try_catch.cs" />
     <Compile Include="code\Try_catch2.cs" />
+    <Compile Include="code\Try_catch3.cs" />
     <Compile Include="code\Virtual.cs" />
     <Compile Include="Indexer.cs" />
     <Compile Include="Interface.cs" />

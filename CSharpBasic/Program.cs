@@ -106,6 +106,9 @@ namespace CSharpBasic
 
             new Try_catch();
             new Try_catch2();
+            new Try_catch3();
+
+            new Out();
 
             new Extend1();
             new Extend2();
