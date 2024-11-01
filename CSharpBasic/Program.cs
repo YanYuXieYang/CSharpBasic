@@ -9,6 +9,9 @@ using CSharpBasic.code;
 
 namespace CSharpBasic
 {
+    /// <summary>
+    /// VS2019控制台项目，.NET Framework 4.7.2
+    /// </summary>
     class Program
     {
         static void Main(string[] args)

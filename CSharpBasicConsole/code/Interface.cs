@@ -8,10 +8,11 @@ namespace CSharpBasic.code
 {
     /// <summary>
     /// 接口用于定义做什么，抽象类用于定义是什么
+    /// 接口(interface)：默认访问修饰符是public
     /// 在 C# 8.0 以前，接口 interface 只有四种成员：方法，属性，事件，索引器
     /// 在 C# 11 这个版中，增加静态成员，接口中还可以有实例化方法和运算符重载
     /// </summary>
-    public interface interf
+    internal interface IInterf
     {
         void Method();
         string Property { get; set; }
