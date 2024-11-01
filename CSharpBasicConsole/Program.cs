@@ -1,12 +1,23 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using CSharpBasic.code;
 using CSharpBasicConsole.code;
+using CSharpBasicConsole.topic;
 using System.Collections;
 using System.Text.RegularExpressions;
 
 //主程序入口，执行编写代码即可。VS2022控制台项目，基于.NET8.0，支持跨平台
-test();
-static void test()
+topic();
+//codding();// study
+
+static void topic()
+{
+    new Override1();
+    new Override2();
+    new Override3();
+    new TryCatch();
+
+}
+static void codding()
 {
     //Test t = new Test();
     ////调用两个方法分别测试拆装箱和不拆装箱执行同样的任务所耗的时间
