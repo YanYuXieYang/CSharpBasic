@@ -14,8 +14,8 @@ namespace CSharpBasic.code
     /// </summary>
     internal interface IInterf
     {
-        private void Method() { Console.WriteLine("interface的实例化方法"); }
-        private string Property { get { return "1"; } set { } }
+        void Method();
+        string Property { get; set; }
         string this[int i] { get; set; }
         event EventHandler Event;
     }

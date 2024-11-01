@@ -1,9 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using CSharpBasic.code;
+using CSharpBasicConsole.code;
 using System.Collections;
 using System.Text.RegularExpressions;
 
-//主程序入口，执行编写代码即可。VS2022控制台项目，基于.NET8.0
+//主程序入口，执行编写代码即可。VS2022控制台项目，基于.NET8.0，支持跨平台
 test();
 static void test()
 {
@@ -98,6 +99,8 @@ static void test()
     new Try_catch3();
 
     new Out();
+
+    new Operator();
 
     new Extend1();
     new Extend2();
