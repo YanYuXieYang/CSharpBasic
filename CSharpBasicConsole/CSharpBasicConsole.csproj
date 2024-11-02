@@ -9,6 +9,7 @@
     <PublishTrimmed>False</PublishTrimmed>
     <SignAssembly>False</SignAssembly>
     <DelaySign>False</DelaySign>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

@@ -15,7 +15,11 @@ static void topic()
     new Override2();
     new Override3();
     new TryCatch();
-
+    new Float2();
+    new PointFixed();
+    new Delegate2();
+    new ParseObject();
+    new RegexClass();
 }
 static void codding()
 {

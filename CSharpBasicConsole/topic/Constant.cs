@@ -9,7 +9,7 @@ namespace CSharpBasicConsole.topic
     /// <summary>
     /// 链接：https://www.nowcoder.com/questionTerminal/3526446e424e4770a7f7d2d30c36c027
 
-    //在C#中，下面描述错误的是（B）：[静态常量用const定义，]
+    //在C#中，下面描述错误的是（B）：[静态常量用static readonly定义]
 
     //A.const字段只能在该字段的声明中初始化
 
@@ -21,5 +21,7 @@ namespace CSharpBasicConsole.topic
     /// </summary>
     internal class Constant
     {
+        static readonly int a = 1;
+        const int b = 2;
     }
 }
