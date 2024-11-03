@@ -20,6 +20,10 @@ static void topic()
     new Delegate2();
     new ParseObject();
     new RegexClass();
+
+    // codding部分
+    new Operator();
+
 }
 static void codding()
 {
