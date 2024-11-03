@@ -23,7 +23,10 @@ static void topic()
 
     // codding部分
     new Operator();
-
+    new Attribute2();
+    new AttributeReflection();
+    new Func();
+    new NullAbleCode();
 }
 static void codding()
 {

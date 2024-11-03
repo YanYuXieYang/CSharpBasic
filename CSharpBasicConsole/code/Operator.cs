@@ -57,6 +57,8 @@ namespace CSharpBasicConsole.code
             Console.WriteLine(string.Empty == null); // string.Empty == null输出: False
             Console.WriteLine(string.Empty.Equals(null)); // string.Empty.Equals(null)输出: False
 
+            // 运算符优先级
+            Console.WriteLine("算术运算符：{0}", 2*9/3%5+7-3*3); // 输出：-1
         }
 
     }
