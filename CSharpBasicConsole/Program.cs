@@ -27,6 +27,7 @@ static void topic()
     new AttributeReflection();
     new Func();
     new NullAbleCode();
+    new GenericClass();
 }
 static void codding()
 {
