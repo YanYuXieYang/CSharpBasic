@@ -149,6 +149,41 @@ namespace CSharpBasicConsole.code
             {
                 Console.WriteLine("模糊匹配：没有找到模式");
             }
+
+            Console.WriteLine("----分隔线-----");
+            input = "a.b";
+            pattern = @"a.b";//  
+            Console.WriteLine(Regex.IsMatch(input, pattern));
+            Console.WriteLine("----分隔线-----");
+            input = "a3b";
+            Console.WriteLine(Regex.IsMatch(input, pattern));
+            Console.WriteLine("----分隔线-----");
+            input = "ab";
+            Console.WriteLine(Regex.IsMatch(input, pattern));
+            Console.WriteLine("----分隔线-----");
+            input = "a43b";
+            Console.WriteLine(Regex.IsMatch(input, pattern));
+
+            // 只想匹配简体汉字，可以使用范围
+            Console.WriteLine("----分隔线-----");
+            input = "汉字";
+            pattern = @"(\u4e00-\u9fff)+";//  
+            Console.WriteLine(Regex.IsMatch(input, pattern));
+
+            Console.WriteLine("----分隔线-----");
+            input = "１２３";//全角数字123，unicode字符
+            pattern = @"\d+";//  .NET默认使用的是unicode匹配模式
+            Console.WriteLine(Regex.IsMatch(input, pattern));//True
+            Console.WriteLine(Regex.IsMatch(input, pattern, RegexOptions.ECMAScript));//False //ECMAScript表示匹配ASCII字符
+            pattern = @"[0-9]+";//  准确匹配ASCII字符，但不包含unicode字符
+            Console.WriteLine(Regex.IsMatch(input, pattern));//False
+
+            Console.WriteLine("----分隔线-----");
+            input = "xzx12_小豆子学堂";
+            pattern = @"^\w+$";//  .NET默认使用的是unicode匹配模式
+            Console.WriteLine(Regex.IsMatch(input, pattern));//True
+            Console.WriteLine(Regex.IsMatch(input, pattern, RegexOptions.ECMAScript));//False //ECMAScript表示匹配ASCII字符
+
         }
     }
 }
