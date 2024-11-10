@@ -3,11 +3,15 @@ using CSharpBasic.code;
 using CSharpBasicConsole.code;
 using CSharpBasicConsole.topic;
 using System.Collections;
+using System.Globalization;
+using System.Numerics;
 using System.Text.RegularExpressions;
+using static CSharpBasic.code.Static;
 
 //主程序入口，执行编写代码即可。VS2022控制台项目，基于.NET8.0，支持跨平台
-topic();
-//codding();// study
+codding();// study
+topic();// 题库
+
 
 static void topic()
 {
@@ -28,6 +32,9 @@ static void topic()
     new Func();
     new NullAbleCode();
     new GenericClass();
+    new StaticTopic();
+    new LockTopic();
+
 }
 static void codding()
 {
@@ -35,6 +42,23 @@ static void codding()
     ////调用两个方法分别测试拆装箱和不拆装箱执行同样的任务所耗的时间
     //t.Test001();// 4s
     //t.Test002();
+
+    new ClosureFunc();
+
+    //int[] array = new int[5]{ 0,1,2 };// 大括号内要与数组定义大小匹配
+    int[] array2 = { 0,1,2,3,4};
+    int[] array3 = [0,1,2,3,4];
+
+    //struct
+    MyStruct ms = new MyStruct() { MyField = 1 };
+    ms.MyField = 2;
+
+    Hashtable ht = new Hashtable();
+    ht.Add(1, "s1");
+    ht.Add("s2", 2);
+    object ht3 = null;
+    ht.Add(ht3, null);
+    var dn = new Dictionary<int, string>();
 
     decimal a = 10;
     Console.WriteLine(a);
@@ -53,7 +77,7 @@ static void codding()
 
     Foo foo = null;
     /*
-    +运算和??运算，是同级的，从左到右
+    +运算比??运算优先级高
     foo?N 其中foo为空，故foo?.N为空，而不是我们自己定义只读属性N的默认值1
     2+null,注意结果是int?类型的，结果是null
     null??1,结果即1
@@ -114,7 +138,8 @@ static void codding()
     var r = new AClass();
     r.Name = "abcde";
     Console.WriteLine(r);//输出结果是命名空间+类型：CSharpBasic.code.AClass。若是record记录则会输出类似GRecord { A = abcde, B = 0 }
-
+    AClass.Func();
+    AClass.intVar += 2;
     new Indexer();
 
     new Try_catch();
@@ -128,6 +153,7 @@ static void codding()
     new Extend1();
     new Extend2();
     new Extend3();
+
 
     int[] myArray = { 1, 2, 3, 4, 5 };
     int lengthOfArray = myArray.Length;
@@ -144,8 +170,9 @@ static void codding()
     new Switch();
 
     short s1 = 1;
+    s1 += 1;//复合赋值运算符（如+=）会自动处理类型转换的问题
+    //s1 = s1 + 1; // 无法将Int隐式转换为short
     s1 = (short)(s1 + 1);
-    s1 += 1;
     Console.WriteLine(s1);
 
     new Static();

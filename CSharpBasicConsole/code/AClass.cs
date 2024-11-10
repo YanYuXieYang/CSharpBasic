@@ -27,8 +27,11 @@ namespace CSharpBasic.code
     {
         //常量
         public const string MyType = "Class";
+        public static int intVar = 2;
         //静态成员
         public static string No { get; set; }
+        // 静态函数
+        public static void Func() { }
         //字段
         private string _name;
         //构造函数
@@ -65,6 +68,7 @@ namespace CSharpBasic.code
         //嵌套类
         public class AChildClass
         {
+
         }
     }
 
@@ -81,8 +85,12 @@ namespace CSharpBasic.code
     /// 1.抽象类不能实例化,不能使用类名调用，只能用子类来实例化它，然后调用。
     /// 2.抽象类中可以有抽象成员和实例化成员
     /// </summary>
-    public abstract class CClass
+    public abstract class CClass 
     {
+        static void Main(string[] args)
+        {
+
+        }
         public abstract void Show();// 抽象类中的抽象成员.这个方法没有实现，只有签名，没有具体干什么的代码
         public void Show(string message)// 抽象类中的实例化成员
         {

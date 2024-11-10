@@ -24,6 +24,11 @@ namespace CSharpBasic.code
             Equals_DiffType();
             Equals_Virual();
             Equals_NaN();
+
+            int i = 5,j = 5;
+            if (Object.ReferenceEquals(i, j))
+                Console.WriteLine("Equal");
+            else Console.WriteLine("Not Equal");
         }
         void Equals_String()
         {
@@ -61,6 +66,10 @@ namespace CSharpBasic.code
             Console.WriteLine(f1.GetHashCode());
             Console.WriteLine(f2.GetHashCode());
         }
+        /// <summary>
+        /// Equals方法在运行时根据object的实际类型来调用，在上例Equals_Object中，
+        /// 它调用了Int32的Equals方法，所以是true.
+        /// </summary>
         void Equals_DiffType()
         {
             Console.WriteLine(">>>Equals_DiffType:");

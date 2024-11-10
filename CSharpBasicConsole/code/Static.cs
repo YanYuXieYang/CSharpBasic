@@ -27,11 +27,11 @@ namespace CSharpBasic.code
             //场景1
             new B();
             //场景2
-            //Console.WriteLine(B.strText);
-            //new B();// 静态构造函数只实例化一次，后续调用不会再初始化
-            //Console.WriteLine(A.strText);
-            //new A();
-            //new B();
+            Console.WriteLine(B.strText);
+            new B();// 静态构造函数只实例化一次，后续调用不会再初始化
+            Console.WriteLine(A.strText);
+            new A();
+            new B();
         }
 
         public class A

@@ -16,7 +16,7 @@ namespace CSharpBasic.code
     {
         public Extend1()
         {
-            var b = new B();
+            A b = new B();
             b.PrintFields();
         }
 

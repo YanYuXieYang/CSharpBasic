@@ -10,6 +10,18 @@ namespace CSharpBasic.code
     {
         public Switch()
         {
+            // switch可作⽤于long double float boolean
+            float myLongVariable = 123.01f;
+            switch (myLongVariable)
+            {
+                case 123.01f:
+                    Console.WriteLine("case succ");
+                    break;
+                case 2:
+                    // 代码块
+                    break;
+            }
+
             byte b = 1;
             string s = "s1";
             long l = 100;
